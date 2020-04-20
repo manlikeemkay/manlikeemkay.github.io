@@ -1,0 +1,37 @@
+# .gitignore Configuration File.
+# Author: Mohamed Kherroubi (@manlikeemkay).
+# Last Modified: 20/04/2020.
+# Modified from a file created by https://www.gitignore.io/apinode,macos,visualstudiocode.
+
+### macOS ###
+._*
+.apdisk
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.DS_Store
+.fseventsd
+.LSOverride
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+Icon
+Network Trash Folder
+Temporary Items
+
+### Node ###
+.grunt
+.npm
+*.log
+*.pid
+*.pid.lock
+logs
+node_modules/
+npm-debug.log*
+
+### Visual Studio Code ###
+.history
+.vscode/*
