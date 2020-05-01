@@ -1,7 +1,24 @@
 # .gitignore Configuration File.
 # Author: Mohamed Kherroubi (@manlikeemkay).
-# Last Modified: 20/04/2020.
-# Modified from a file created by https://www.gitignore.io/apinode,macos,visualstudiocode.
+# Last Modified: 30/04/2020.
+# Modified from a file created by https://www.gitignore.io/apinode,macos,angular,visualstudiocode.
+
+### Angular ###
+.idea/
+.sass-cache/
+app/**/*.js
+app/**/*.js.map
+connect.lock/
+coverage/
+dist/
+e2e/*.js
+e2e/*.map
+libpeerconnection.log/
+node_modules/
+npm-debug.log
+testem.log
+tmp/
+typings/
 
 ### macOS ###
 ._*
@@ -35,3 +52,6 @@ npm-debug.log*
 ### Visual Studio Code ###
 .history
 .vscode/*
+
+### Custom ###
+*.zip

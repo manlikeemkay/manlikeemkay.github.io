@@ -1,7 +1,7 @@
 {
   "name": "manlikeemkay.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple, modern and responsive portfolio website for a front-end web developer",
   "author": "Mohamed Kherroubi (@manlikeemkay)",
   "contributors": [
     {
@@ -13,6 +13,7 @@
     "HTML",
     "CSS",
     "JavaScript",
+    "Foundation",
     "jQuery"
   ],
   "repository": {
@@ -22,28 +23,30 @@
   "main": "index.html",
   "private": true,
   "dependencies": {
-    "@babel/core": "7.9.0",
-    "@babel/preset-env": "7.9.5",
+    "@babel/core": "7.9.6",
+    "@babel/preset-env": "7.9.6",
     "browser-sync": "2.26.7",
+    "foundation-sites": "6.6.3",
     "git-rev": "0.2.1",
-    "gulp": "3.9.1",
-    "gulp-autoprefixer": "6.1.0",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "7.0.1",
     "gulp-babel": "8.0.0",
     "gulp-bump": "3.1.3",
     "gulp-clean": "0.4.0",
     "gulp-cssmin": "0.2.0",
-    "gulp-eslint": "5.0.0",
+    "gulp-eslint": "6.0.0",
     "gulp-jshint": "2.1.0",
     "gulp-remove-empty-lines": "0.1.0",
-    "gulp-sass": "4.0.2",
+    "gulp-sass": "4.1.0",
     "gulp-scss-lint": "1.0.0",
     "gulp-strip-css-comments": "2.0.0",
     "gulp-uglify": "3.0.2",
     "gulp-uncss": "^1.0.6",
     "gulp-util": "3.0.8",
-    "gulp-zip": "4.2.0",
+    "gulp-zip": "5.0.1",
+    "gulp4-run-sequence": "^1.0.1",
+    "jquery": "3.5.0",
     "jshint": "2.11.0",
-    "prettier": "^2.0.4",
-    "run-sequence": "2.2.1"
+    "prettier": "^2.0.5"
   }
 }
