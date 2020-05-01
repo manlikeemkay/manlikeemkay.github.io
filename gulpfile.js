@@ -96,7 +96,7 @@ gulp.task("uncss", function () {
         .src("dist/css/**/**.css")
         .pipe(
             uncss({
-                html: ["src/index.html"]
+                html: ["src/index.html"],
             })
         )
         .pipe(gulp.dest("css"));
@@ -124,14 +124,19 @@ gulp.task("archive", function () {
         .pipe(gulp.dest("."));
 });
 
-gulp.task("watch", function () {
+gulp.task("serve", function (done) {
     browserSync.init({
         browser: "google chrome",
         server: {
             baseDir: "./",
         },
     });
-    gulp.watch(["src/**/**"], gulp.series("build", browserSync.reload));
+    done();
+});
+
+gulp.task("reload", function (done) {
+    browserSync.reload();
+    done();
 });
 
 gulp.task("build", function (done) {
@@ -152,5 +157,6 @@ gulp.task("release", function () {
 });
 
 gulp.task("default", function (done) {
-    runSequence("build", "watch", done);
+    runSequence("build", "serve", done);
+    gulp.watch(["src/**/**"], gulp.series("build", "reload"));
 });
