@@ -158,5 +158,5 @@ gulp.task("release", function () {
 
 gulp.task("default", function (done) {
     runSequence("build", "serve", done);
-    gulp.watch(["src/**/**"], gulp.series("build", "reload"));
+    gulp.watch(["src/**/**/**"], gulp.series("build", "reload"));
 });
