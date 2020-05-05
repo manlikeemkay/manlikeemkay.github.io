@@ -20,7 +20,8 @@
 @import "foundation";
 
 @include foundation-global-styles;
-@include foundation-grid;
+@include foundation-flex-classes;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-visibility-classes;
 @include foundation-prototype-classes;
@@ -36,10 +37,9 @@
 // @include foundation-drilldown-menu;
 // @include foundation-dropdown-menu;
 // @include foundation-dropdown;
-// @include foundation-flex-classes;
-// @include foundation-flex-grid;
 // @include foundation-float-classes;
 // @include foundation-forms;
+// @include foundation-grid;
 // @include foundation-label;
 // @include foundation-media-object;
 // @include foundation-menu-icon;
@@ -60,3 +60,6 @@
 // @include foundation-tooltip;
 // @include foundation-top-bar;
 // @include foundation-xy-grid-classes;
+
+@import "colour";
+@import "section";
