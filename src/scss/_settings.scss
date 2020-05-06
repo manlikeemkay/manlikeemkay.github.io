@@ -66,7 +66,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(960);
 $global-lineheight: 1.5;
 $foundation-palette: (
     primary: #00a8ff,
@@ -149,42 +149,42 @@ $header-margin-bottom: 0.5rem;
 $header-styles: (
     small: (
         "h1": (
-            "font-size": 24,
+            "font-size": 39.60,
         ),
         "h2": (
-            "font-size": 20,
+            "font-size": 34.32,
         ),
         "h3": (
-            "font-size": 19,
+            "font-size": 29.04,
         ),
         "h4": (
-            "font-size": 18,
+            "font-size": 17.16,
         ),
         "h5": (
-            "font-size": 17,
+            "font-size": 13.20,
         ),
         "h6": (
-            "font-size": 16,
+            "font-size": 11.88,
         ),
     ),
     medium: (
         "h1": (
-            "font-size": 48,
+            "font-size": 60,
         ),
         "h2": (
-            "font-size": 40,
+            "font-size": 52,
         ),
         "h3": (
-            "font-size": 31,
+            "font-size": 44,
         ),
         "h4": (
-            "font-size": 25,
+            "font-size": 26,
         ),
         "h5": (
             "font-size": 20,
         ),
         "h6": (
-            "font-size": 16,
+            "font-size": 18,
         ),
     ),
 );

@@ -1,22 +1,39 @@
 .landing {
-    min-height: 100vh;
-    .row {
-        min-height: 100vh;
-        text-align: center;
+    > div:first-child {
+        min-height: calc(100vh - 41px);
+        h1, p {
+            margin-bottom: 0;
+        }
         img {
             margin-bottom: 15px;
-            height: 128px;
+            height: 189px;
         }
     }
 }
-.workflow {
-    min-height: 25vh;
+.technologies {
+    min-height: 50vh;
 }
 .projects {
     min-height: 100vh;
 }
-.technologies {
-    min-height: 50vh;
+.workflow {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    min-height: 33vh;
+    background-color: $chain-gang-grey;
+    .row {
+        min-height: 33vh;
+        text-align: center;
+        img {
+            margin-top: 15px;
+            height: 64px;
+            &:nth-child(odd) {
+                margin-right: 10px;
+                margin-left: 10px;
+                height: 24px;
+            }
+        }
+    }
 }
 .social {
     min-height: 25vh;
