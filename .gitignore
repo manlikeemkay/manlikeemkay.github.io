@@ -1,13 +1,15 @@
 # .gitignore Configuration File.
 # Author: Mohamed Kherroubi (@manlikeemkay).
-# Last Modified: 30/04/2020.
-# Modified from a file created by https://www.gitignore.io/apinode,macos,angular,visualstudiocode.
+# Last Modified: 06/05/2020.
+# Modified from a file created by http://gitignore.io/api/node,macos,jekyll,angular,visualstudiocode.
 
 ### Angular ###
+.DS_Store/
 .idea/
 .sass-cache/
 app/**/*.js
 app/**/*.js.map
+bower_components/
 connect.lock/
 coverage/
 dist/
@@ -19,6 +21,12 @@ npm-debug.log
 testem.log
 tmp/
 typings/
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
 ### macOS ###
 ._*
@@ -40,18 +48,49 @@ Network Trash Folder
 Temporary Items
 
 ### Node ###
+.cache
+.dynamodb/
+.env
+.env.test
+.eslintcache
+.fusebox/
 .grunt
+.lock-wscript
+.next
+.node_repl_history
 .npm
+.nuxt
+.nyc_output
+.out
+.serverless/
+.storybook-out
+.vuepress/dist
+.yarn-integrity
+*.lcov
 *.log
 *.pid
 *.pid.lock
+*.seed
+*.tgz
+*.tsbuildinfo
+bower_components
+build/Release
+coverage
+jspm_packages/
+lerna-debug.log*
+lib-cov
 logs
-node_modules/
 npm-debug.log*
+pids
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+temp/
+yarn-debug.log*
+yarn-error.log*
 
 ### Visual Studio Code ###
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
 .history
 .vscode/*
-
-### Custom ###
-*.zip
