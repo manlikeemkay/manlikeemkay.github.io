@@ -69,17 +69,15 @@ $global-font-size: 100%;
 $global-width: rem-calc(960);
 $global-lineheight: 1.5;
 $foundation-palette: (
-    primary: #00a8ff,
-    secondary: #767676,
-    success: #4cd137,
-    warning: #fbc531,
-    alert: #e84118,
+    primary: $indigo,
+    secondary: $blue,
+    success: $green,
+    warning: $yellow,
+    alert: $red,
 );
-$light-gray: #b8c0cc;
-$medium-gray: #737880;
-$dark-gray: #393c40;
-$black: #2f3640;
-$white: #f5f6fa;
+$light-gray: $gray-light;
+$medium-gray: $gray;
+$dark-gray: $gray-dark;
 $body-background: $black;
 $body-font-color: $white;
 $body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

@@ -15,6 +15,7 @@
 @import "../_vendor/sassy-lists/stylesheets/functions/replace";
 @import "../_vendor/sassy-lists/stylesheets/functions/to-list";
 
+@import "colour";
 @import "util/util";
 @import "settings";
 @import "foundation";
@@ -61,5 +62,4 @@
 // @include foundation-top-bar;
 // @include foundation-xy-grid-classes;
 
-@import "colour";
 @import "section";

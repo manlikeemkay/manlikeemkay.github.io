@@ -1,8 +1,11 @@
 .landing {
     > div:first-child {
         min-height: calc(100vh - 41px);
-        h1, p {
+        h1, h5 {
             margin-bottom: 0;
+        }
+        h2 {
+            color: $blue;
         }
         img {
             margin-bottom: 15px;
@@ -26,7 +29,6 @@
     padding-top: 25px;
     padding-bottom: 25px;
     min-height: 33vh;
-    background-color: $chain-gang-grey;
     .row {
         min-height: 33vh;
         text-align: center;
