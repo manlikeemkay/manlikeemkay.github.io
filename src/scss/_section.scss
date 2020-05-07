@@ -23,11 +23,16 @@
     }
 }
 .projects {
+    padding-top: 40px;
+    padding-bottom: 40px;
     min-height: 100vh;
+    h4 {
+        margin-bottom: 25px;
+    }
 }
 .workflow {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     min-height: 33vh;
     .row {
         min-height: 33vh;
