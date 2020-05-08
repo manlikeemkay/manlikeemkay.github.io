@@ -28,8 +28,11 @@
             margin-bottom: 0;
         }
     }
-    img {
+    a {
+        display: inline-block;
         margin-top: 25px;
+    }
+    img {
         width: auto;
         height: 64px;
     }
