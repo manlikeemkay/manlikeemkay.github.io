@@ -45,6 +45,32 @@
     h4 {
         margin-bottom: 25px;
     }
+    .project {
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        img {
+            display: inline;
+            margin-right: 10px;
+            height: 24px;
+            vertical-align: sub;
+        }
+        h5 {
+            display: inline;
+        }
+        p {
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        small {
+            display: inline-block;
+            align-self: flex-end;
+            margin-top: 15px;
+            pre {
+                font-family: $font-family-monospace;
+            }
+        }
+    }
 }
 .workflow {
     padding-top: 100px;
@@ -62,11 +88,11 @@
     }
 }
 .social {
-    padding-top: 75px;
-    padding-bottom: 75px;
-    min-height: 66vh;
+    padding-top: 175px;
+    padding-bottom: 175px;
+    min-height: 33vh;
     .row {
-        min-height: 66vh;
+        min-height: 33vh;
         img {
             width: auto;
             height: 64px;
