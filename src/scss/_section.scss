@@ -18,55 +18,63 @@
     }
 }
 .technologies {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 125px;
+    padding-bottom: 100px;
     // min-height: 33vh;
-    background-color: $gray-darker;
+    // background-color: $gray-darker;
     > div:first-child {
         // min-height: 33vh;
         p {
             margin-bottom: 0;
         }
     }
+    img {
+        margin-top: 25px;
+        width: auto;
+        height: 64px;
+    }
 }
 .projects {
     padding-top: 75px;
     padding-bottom: 75px;
     // min-height: 50vh;
-    background-color: $gray-light;
+    // background-color: $gray-light;
     h4 {
         margin-bottom: 25px;
     }
 }
 .workflow {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 100px;
+    padding-bottom: 25px;
     // min-height: 33vh;
-    background-color: $gray-darkest;
+    // background-color: $gray-darkest;
     .row {
         // min-height: 33vh;
         text-align: center;
         img {
             margin-top: 15px;
+            width: auto;
             height: 64px;
-            &:nth-child(odd) {
-                margin-right: 10px;
-                margin-left: 10px;
-                height: 24px;
-            }
         }
     }
 }
 .social {
     padding-top: 75px;
     padding-bottom: 75px;
-    // min-height: 50vh;
+    min-height: 66vh;
     .row {
-        // min-height: 50vh;
+        min-height: 66vh;
+        img {
+            width: auto;
+            height: 64px;
+        }
     }
 }
 .footer {
     padding-top: 75px;
-    padding-bottom: 75px;
-    background-color: $indigo-darkest;
+    // padding-bottom: 75px;
+    // background-color: $indigo-darkest;
+    img {
+        height: 18px;
+    }
 }
