@@ -1,7 +1,6 @@
 .landing {
-    background-color: $gray;
     > div:first-child {
-        min-height: calc(100vh - 41px);
+        min-height: calc(100vh - 32px);
         h1, h5 {
             margin-bottom: 0;
         }
@@ -12,6 +11,10 @@
             margin-bottom: 15px;
             height: 189px;
         }
+    }
+    img[src$=".svg"] {
+        width: auto;
+        height: 32px;
     }
 }
 .technologies {
