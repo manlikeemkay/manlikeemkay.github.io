@@ -40,8 +40,6 @@
 .projects {
     padding-top: 75px;
     padding-bottom: 50px;
-    // min-height: 50vh;
-    // background-color: $gray-light;
     h4 {
         margin-bottom: 25px;
     }
@@ -68,7 +66,7 @@
                 min-height: unset;
                 color: $slategray-light;
                 font-size: 12px;
-                font-family: $font-family-monospace;;
+                font-family: $font-family-monospace;
             }
         }
     }
@@ -76,15 +74,12 @@
 .workflow {
     padding-top: 100px;
     padding-bottom: 25px;
-    // min-height: 33vh;
-    // background-color: $gray-darkest;
     .row {
-        // min-height: 33vh;
         text-align: center;
         img {
             margin-top: 15px;
+            max-height: 64px;
             width: auto;
-            height: 64px;
         }
     }
 }
