@@ -19,7 +19,7 @@
 }
 .technologies {
     padding-top: 125px;
-    padding-bottom: 100px;
+    padding-bottom: 125px;
     // min-height: 33vh;
     // background-color: $gray-darker;
     > div:first-child {
@@ -39,18 +39,19 @@
 }
 .projects {
     padding-top: 75px;
-    padding-bottom: 75px;
+    padding-bottom: 50px;
     // min-height: 50vh;
     // background-color: $gray-light;
     h4 {
         margin-bottom: 25px;
     }
     .project {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         padding-top: 15px;
         padding-bottom: 15px;
+        min-height: 175px;
         img {
-            display: inline;
+            display: inline-block;
             margin-right: 10px;
             height: 24px;
             vertical-align: sub;
@@ -61,13 +62,13 @@
         p {
             margin-top: 15px;
             margin-bottom: 0;
-        }
-        small {
-            display: inline-block;
-            align-self: flex-end;
-            margin-top: 15px;
-            pre {
-                font-family: $font-family-monospace;
+            min-height: 75px;
+            &:nth-child(4) {
+                margin-top: 15px;
+                min-height: unset;
+                color: $slategray-light;
+                font-size: 12px;
+                font-family: $font-family-monospace;;
             }
         }
     }
