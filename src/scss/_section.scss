@@ -1,11 +1,19 @@
 .landing {
     > div:first-child {
         min-height: calc(100vh - 32px);
-        h1, h5 {
-            margin-bottom: 0;
-        }
-        h2 {
-            color: $blue;
+        .column:first-child {
+            align-self: flex-end;
+            margin-bottom: 15px;
+
+            @include breakpoint(medium up) {
+                align-self: flex-start;
+            }
+            h1, p {
+                margin-bottom: 0;
+            }
+            h4 {
+                color: $blue;
+            }
         }
         img {
             margin-bottom: 15px;
@@ -18,7 +26,7 @@
     }
 }
 .technologies {
-    padding-top: 175px;
+    padding-top: 150px;
     padding-bottom: 150px;
     // min-height: 33vh;
     // background-color: $gray-darker;
@@ -44,15 +52,21 @@
         margin-bottom: 25px;
     }
     .project {
-        margin-bottom: 25px;
         padding-top: 15px;
         padding-bottom: 15px;
-        min-height: 175px;
+
+        @include breakpoint(small only) {
+            text-align: center;
+        }
+        @include breakpoint(medium up) {
+            margin-bottom: 25px;
+            min-height: 175px;
+        }
         img {
             display: inline-block;
             margin-right: 10px;
-            height: 24px;
-            vertical-align: sub;
+            height: 25px;
+            vertical-align: bottom;
         }
         h5 {
             display: inline;
@@ -60,7 +74,13 @@
         p {
             margin-top: 15px;
             margin-bottom: 0;
-            min-height: 75px;
+
+            @include breakpoint(medium up) {
+                min-height: 75px;
+            }
+            &:first-of-type {
+                display: inline-block;
+            }
             &:nth-child(4) {
                 margin-top: 15px;
                 min-height: unset;
@@ -92,6 +112,11 @@
         img {
             width: auto;
             height: 64px;
+            &[src$="gmail.svg"] {
+                width: 75px;
+                height: auto;
+                vertical-align: text-top;
+            }
         }
     }
 }
