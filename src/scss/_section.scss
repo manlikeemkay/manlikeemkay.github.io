@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .landing {
     > .row:first-child {
         min-height: calc(100vh - 32px);
@@ -42,41 +45,71 @@
     }
 }
 .technologies {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    // min-height: 33vh;
-    // background-color: $gray-darker;
-    > div:first-child {
-        // min-height: 33vh;
-        p {
-            margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    > .row {
+        &:first-child {
+            p {
+                margin-bottom: 0;
+            }
         }
-    }
-    a {
-        display: inline-block;
-        margin-top: 25px;
-    }
-    img {
-        width: auto;
-        height: 64px;
+        a {
+            display: block;
+            padding-top: 50px;
+        }
+        img {
+            width: auto;
+            height: 64px;
+            &[src$="aws.svg"] {
+                width: 95px;
+                height: auto;
+            }
+        }
     }
 }
 .projects {
-    padding-top: 75px;
-    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
     h4 {
         margin-bottom: 25px;
     }
     .project {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        margin-bottom: 15px;
+        padding: 15px;
 
-        @include breakpoint(small only) {
+        @include breakpoint(medium down) {
             text-align: center;
         }
-        @include breakpoint(medium up) {
+        @include breakpoint(large up) {
             margin-bottom: 25px;
             min-height: 175px;
+        }
+        &:last-child {
+            p {
+                display: inline-block;
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+            img[src$="flask.svg"] {
+                margin-bottom: 15px;
+            }
+        }
+        a {
+            display: block;
+            color: $blue-light;
+            font-weight: bold;
+            &:hover p {
+                text-decoration: underline;
+            }
+            p {
+                display: inline-block;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
         }
         img {
             display: inline-block;
@@ -87,29 +120,21 @@
         h5 {
             display: inline;
         }
-        p {
+        > p {
             margin-top: 15px;
-            margin-bottom: 0;
+            margin-bottom: 15px;
 
-            @include breakpoint(medium up) {
-                min-height: 75px;
-            }
-            &:first-of-type {
-                display: inline-block;
-            }
-            &:nth-child(4) {
-                margin-top: 15px;
-                min-height: unset;
-                color: $slategray-light;
-                font-size: 12px;
-                font-family: $font-family-monospace;
+            &:last-child {
+                margin-bottom: 15px;
             }
         }
     }
 }
 .workflow {
-    padding-top: 100px;
-    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
     .row {
         text-align: center;
         img {
@@ -120,9 +145,10 @@
     }
 }
 .social {
-    padding-top: 175px;
-    padding-bottom: 175px;
-    min-height: 33vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
     .row {
         min-height: 33vh;
         img {
@@ -138,8 +164,6 @@
 }
 .footer {
     padding-top: 75px;
-    // padding-bottom: 75px;
-    // background-color: $indigo-darkest;
     img {
         height: 18px;
     }

@@ -32,21 +32,23 @@
                 </div>
                 <div class="row collapse">
                     <div class="column text-center">
-                        <img src="dist/images/caret-down.svg" alt="" />
+                        <a href="#technologies">
+                            <img src="dist/images/caret-down.svg" alt="" />
+                        </a>
                     </div>
                 </div>
             </section>
-            <section class="technologies text-center">
+            <section class="technologies text-center" id="technologies">
                 <div class="row">
                     <div class="column small-12">
                         <h3>
-                            Technologies <br />
+                            Technologies <br class="show-for-small-only" />
                             I've used recently
                         </h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="column small-4">
+                <div class="row collapse">
+                    <div class="column small-4 medium-3">
                         <a
                             target="_blank"
                             href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
@@ -54,27 +56,12 @@
                             <img src="dist/images/html.svg" alt="HTML5" />
                         </a>
                     </div>
-                    <div class="column small-4">
+                    <div class="column small-4 medium-3">
                         <a target="_blank" href="https://sass-lang.com/">
                             <img src="dist/images/sass.svg" alt="SASS"
                         /></a>
                     </div>
-                    <div class="column small-4">
-                        <a
-                            target="_blank"
-                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                        >
-                            <img
-                                src="dist/images/javascript.svg"
-                                alt="JavaScript"
-                        /></a>
-                    </div>
-                    <div class="column small-4">
-                        <a target="_blank" href="https://angular.io/">
-                            <img src="dist/images/angular.svg" alt="Angular"
-                        /></a>
-                    </div>
-                    <div class="column small-4">
+                    <div class="column small-4 medium-3">
                         <a
                             target="_blank"
                             href="https://www.typescriptlang.org/"
@@ -84,17 +71,22 @@
                                 alt="TypeScript"
                         /></a>
                     </div>
-                    <div class="column small-4">
-                        <a target="_blank" href="https://gulpjs.com/">
-                            <img src="dist/images/gulp.svg" alt="Gulp"
+                    <div class="column small-4 medium-3">
+                        <a target="_blank" href="https://angular.io/">
+                            <img src="dist/images/angular.svg" alt="Angular"
                         /></a>
                     </div>
-                    <div class="column small-4">
+                    <div class="column small-4 medium-3">
+                        <a href="https://ionicframework.com/" target="_blank">
+                            <img src="dist/images/ionic.svg" alt="Ionic" />
+                        </a>
+                    </div>
+                    <div class="column small-4 medium-3">
                         <a href="https://www.cypress.io/" target="_blank">
                             <img src="dist/images/cypress.svg" alt="Cypress" />
                         </a>
                     </div>
-                    <div class="column small-4">
+                    <div class="column small-4 medium-3">
                         <a
                             href="https://karma-runner.github.io/latest/index.html"
                             target="_blank"
@@ -102,7 +94,7 @@
                             <img src="dist/images/karma.svg" alt="Karma" />
                         </a>
                     </div>
-                    <div class="column small-4">
+                    <div class="column small-4 medium-3">
                         <a
                             href="https://www.protractortest.org/#/"
                             target="_blank"
@@ -110,6 +102,37 @@
                             <img
                                 src="dist/images/protractor.svg"
                                 alt="Protractor"
+                            />
+                        </a>
+                    </div>
+                    <div class="column small-4 medium-3">
+                        <a href="https://reactjs.org/" target="_blank">
+                            <img src="dist/images/react.svg" alt="React" />
+                        </a>
+                    </div>
+                    <div class="column small-4 medium-3">
+                        <a
+                            target="_blank"
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                        >
+                            <img
+                                src="dist/images/javascript.svg"
+                                alt="JavaScript"
+                        /></a>
+                    </div>
+                    <div class="column small-4 medium-3">
+                        <a href="https://firebase.google.com/" target="_blank">
+                            <img
+                                src="dist/images/firebase.svg"
+                                alt="Firebase"
+                            />
+                        </a>
+                    </div>
+                    <div class="column small-4 medium-3">
+                        <a href="https://aws.amazon.com/" target="_blank">
+                            <img
+                                src="dist/images/aws.svg"
+                                alt="Amazon Web Services"
                             />
                         </a>
                     </div>
@@ -121,33 +144,64 @@
                         <h3>Some things I've built</h3>
                     </div>
                     <div class="column small-12 large-4 project">
-                        <img src="dist/images/github.svg" alt="GitHub" />
-                        <p>Portfolio</p>
-                        <p>My personal portfolio website.</p>
-                        <p>> HTML SCSS Foundation Gulp</p>
-                    </div>
-                    <div class="column small-12 large-4 project">
-                        <img src="dist/images/github.svg" alt="GitHub" />
-                        <p>Launch</p>
+                        <a href="">
+                            <img src="dist/images/github.svg" alt="GitHub" />
+                            <p>Launch</p>
+                        </a>
                         <p>
                             A simple boilerplate project to help reduce the set
                             up time of new static web projects.
                         </p>
-                        <p>> SCSS Foundation Gulp Babel</p>
+                        <img src="dist/images/html.svg" alt="HTML" />
+                        <img src="dist/images/sass.svg" alt="SASS" />
+                        <img
+                            src="dist/images/javascript.svg"
+                            alt="JavaScript"
+                        />
+                        <img
+                            src="dist/images/foundation.svg"
+                            alt="Foundation"
+                        />
+                        <img src="dist/images/gulp.svg" alt="Gulp" />
+                        <img src="dist/images/babel.svg" alt="Babel" />
                     </div>
                     <div class="column small-12 large-4 project">
-                        <img src="dist/images/github.svg" alt="GitHub" />
-                        <p>Hero</p>
+                        <a href="">
+                            <img src="dist/images/github.svg" alt="GitHub" />
+                            <p>Portfolio</p>
+                        </a>
+                        <p>My personal portfolio website.</p>
+                        <img src="dist/images/html.svg" alt="HTML" />
+                        <img src="dist/images/sass.svg" alt="SASS" />
+                        <img
+                            src="dist/images/foundation.svg"
+                            alt="Foundation"
+                        />
+                        <img src="dist/images/gulp.svg" alt="Gulp" />
+                    </div>
+                    <div class="column small-12 large-4 project">
+                        <a href="">
+                            <img src="dist/images/github.svg" alt="GitHub" />
+                            <p>Hero</p>
+                        </a>
                         <p>An official introduction into Angular 9.</p>
-                        <p>> Angular TypeScript SCSS</p>
+                        <img src="dist/images/angular.svg" alt="Angular" />
+                        <img
+                            src="dist/images/typescript.svg"
+                            alt="TypeScript"
+                        />
+                        <img src="dist/images/sass.svg" alt="SASS" />
                     </div>
                     <div class="column small-12 large-4 project">
-                        <img src="dist/images/github.svg" alt="GitHub" />
-                        <p>oh-my-git</p>
+                        <a href="">
+                            <img src="dist/images/github.svg" alt="GitHub" />
+                            <p>Oh My Git!</p>
+                        </a>
                         <p>A super useful collection of all things GIT.</p>
-                        <p>> GIT Markdown</p>
+                        <img src="dist/images/git.svg" alt="GIT" />
+                        <img src="dist/images/markdown.svg" alt="Markdown" />
                     </div>
-                    <div class="column expand project">
+                    <div class="column small-12 large-expand project">
                         <img
                             src="dist/images/flask.svg"
                             alt="Watch this space"
@@ -166,7 +220,7 @@
                     <div class="column small-12">
                         <h3>Tools I love using</h3>
                     </div>
-                    <div class="column small-3 medium-1">
+                    <div class="column small-3 medium-3 xlarge-1">
                         <a
                             href="http://autoprefixer.github.io/"
                             target="_blank"
@@ -177,17 +231,17 @@
                             />
                         </a>
                     </div>
-                    <div class="column small-3 medium-1">
+                    <div class="column small-3 medium-3 xlarge-1">
                         <a href="https://www.apple.com/" target="_blank">
                             <img src="dist/images/apple.svg" alt="Apple" />
                         </a>
                     </div>
-                    <div class="column small-3 medium-1">
+                    <div class="column small-3 medium-3 xlarge-1">
                         <a href="https://babeljs.io/" target="_blank">
                             <img src="dist/images/babel.svg" alt="Babel" />
                         </a>
                     </div>
-                    <div class="column small-3 medium-1">
+                    <div class="column small-3 medium-3 xlarge-1">
                         <a
                             href="https://www.google.com/intl/en_uk/chrome/"
                             target="_blank"
@@ -195,7 +249,7 @@
                             <img src="dist/images/chrome.svg" alt="Chrome" />
                         </a>
                     </div>
-                    <div class="column small-3 medium-1">
+                    <div class="column small-3 medium-3 xlarge-1">
                         <a
                             href="https://get.foundation/index.html"
                             target="_blank"
@@ -206,22 +260,22 @@
                             />
                         </a>
                     </div>
-                    <div class="column small-3 medium-1">
+                    <div class="column small-3 medium-3 xlarge-1">
                         <a href="https://git-scm.com/" target="_blank">
                             <img src="dist/images/git.svg" alt="GIT" />
                         </a>
                     </div>
-                    <div class="column small-3 medium-1">
+                    <div class="column small-3 medium-3 xlarge-1">
                         <a href="https://www.npmjs.com/" target="_blank">
                             <img src="dist/images/npm.svg" alt="NPM" />
                         </a>
                     </div>
-                    <div class="column small-3 medium-1">
+                    <div class="column small-3 medium-3 xlarge-1">
                         <a href="https://www.postman.com/" target="_blank">
                             <img src="dist/images/postman.svg" alt="Postman" />
                         </a>
                     </div>
-                    <div class="column small-3 medium-1">
+                    <div class="column small-3 medium-3 xlarge-1">
                         <a href="https://prettier.io/" target="_blank">
                             <img
                                 src="dist/images/prettier.svg"
@@ -229,12 +283,12 @@
                             />
                         </a>
                     </div>
-                    <div class="column small-3 medium-1">
+                    <div class="column small-3 medium-3 xlarge-1">
                         <a href="https://www.git-tower.com" target="_blank">
                             <img src="dist/images/tower.svg" alt="Tower" />
                         </a>
                     </div>
-                    <div class="column small-3 medium-1">
+                    <div class="column small-3 medium-3 xlarge-1">
                         <a
                             href="https://code.visualstudio.com/"
                             target="_blank"
@@ -253,30 +307,28 @@
                         <h3>Get In Touch</h3>
                     </div>
                     <div class="column small-12">
-                        <p>
-                            My inbox is always open!
-                        </p>
+                        <p>My inbox is always open!</p>
                         <p>
                             Whether you have a question, need some advice or
                             just want to say hi, I'll try my best to get back to
                             you!
                         </p>
                     </div>
-                    <div class="column small-4 medium-2">
+                    <div class="column small-4">
                         <a
                             href="mailto:manlikeemkay@gmail.com"
                             target="_blank"
                         ></a>
                         <img src="dist/images/gmail.svg" alt="G-Mail" />
                     </div>
-                    <div class="column small-4 medium-2">
+                    <div class="column small-4">
                         <a
                             href="https://github.com/manlikeemkay"
                             target="_blank"
                         ></a>
                         <img src="dist/images/github.svg" alt="GitHub" />
                     </div>
-                    <div class="column small-4 medium-2">
+                    <div class="column small-4">
                         <a
                             href="https://uk.linkedin.com/in/mkherroubi"
                             target="_blank"
