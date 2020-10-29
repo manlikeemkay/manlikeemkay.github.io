@@ -1,0 +1,25 @@
+.technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    > .row {
+        &:first-child {
+            p {
+                margin-bottom: 0;
+            }
+        }
+        a {
+            display: block;
+            padding-top: 50px;
+        }
+        img {
+            width: auto;
+            height: 64px;
+            &[src$="aws.svg"] {
+                width: 95px;
+                height: auto;
+            }
+        }
+    }
+}

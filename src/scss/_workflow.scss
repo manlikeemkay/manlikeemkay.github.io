@@ -1,0 +1,14 @@
+.workflow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    .row {
+        text-align: center;
+        img {
+            margin-top: 15px;
+            max-height: 64px;
+            width: auto;
+        }
+    }
+}

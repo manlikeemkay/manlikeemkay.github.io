@@ -1,0 +1,43 @@
+.landing {
+    > .row:first-child {
+        min-height: calc(100vh - 32px);
+        .column {
+            text-align: center;
+
+            @include breakpoint(medium up) {
+                align-self: center;
+            }
+
+            &:first-child {
+                margin-bottom: 15px;
+
+                @include breakpoint(small only) {
+                    align-self: flex-end;
+                }
+                @include breakpoint(xlarge up) {
+                    text-align: left;
+                }
+
+                h1, p {
+                    margin-bottom: 0;
+                }
+                h4 {
+                    color: $blue;
+                }
+            }
+            &:last-child {
+                @include breakpoint(xlarge up) {
+                    text-align: right;
+                }
+                img {
+                    margin-bottom: 15px;
+                    height: 189px;
+                }
+            }
+        }
+    }
+    img[src$=".svg"] {
+        width: auto;
+        height: 32px;
+    }
+}

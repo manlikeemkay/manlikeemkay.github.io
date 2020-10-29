@@ -1,0 +1,18 @@
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    .row {
+        min-height: 33vh;
+        img {
+            width: auto;
+            height: 64px;
+            &[src$="gmail.svg"] {
+                width: 75px;
+                height: auto;
+                vertical-align: text-top;
+            }
+        }
+    }
+}

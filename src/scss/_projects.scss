@@ -1,0 +1,61 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    h4 {
+        margin-bottom: 25px;
+    }
+    .project {
+        margin-bottom: 15px;
+        padding: 15px;
+
+        @include breakpoint(medium down) {
+            text-align: center;
+        }
+        @include breakpoint(large up) {
+            margin-bottom: 25px;
+            min-height: 175px;
+        }
+        &:last-child {
+            p {
+                display: inline-block;
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+            img[src$="flask.svg"] {
+                margin-bottom: 15px;
+            }
+        }
+        a {
+            display: block;
+            color: $blue-light;
+            font-weight: bold;
+            &:hover p {
+                text-decoration: underline;
+            }
+            p {
+                display: inline-block;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+        img {
+            display: inline-block;
+            margin-right: 10px;
+            height: 25px;
+            vertical-align: bottom;
+        }
+        h5 {
+            display: inline;
+        }
+        > p {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
