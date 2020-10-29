@@ -1,4 +1,13 @@
 .landing {
+    background-image: url("/dist/images/background.svg");
+    background-position: 33% 0;
+    background-size: auto 75%;
+    background-repeat: no-repeat;
+
+    @include breakpoint(xlarge up) {
+        background-position: center;
+        background-size: auto 100%;
+    }
     > .row:first-child {
         min-height: calc(100vh - 32px);
         .column {
