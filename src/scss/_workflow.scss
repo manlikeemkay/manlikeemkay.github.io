@@ -5,10 +5,22 @@
     min-height: 100vh;
     .row {
         text-align: center;
-        img {
-            margin-top: 15px;
-            max-height: 64px;
-            width: auto;
+        &:nth-child(2) {
+            overflow-x: hidden;
+            width: 100vw;
+            height: 600px;
+            .bubbles {
+                position: relative;
+            }
+            .bubble {
+                position: absolute;
+                width: 152px;
+                height: 152px;
+                border-radius: 50%;
+                background-color: #ffffff;
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1),
+                0 3px 10px rgba(0, 0, 0, 0.1);
+            }
         }
     }
 }

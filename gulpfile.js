@@ -24,7 +24,7 @@ gulp.task("clean", function () {
 
 gulp.task("update", function () {
     return gulp
-        .src("node_modules/jquery/dist/jquery.js")
+        .src("node_modules/noisejs/index.js")
         .pipe(gulp.dest("src/js/vendor/"));
 });
 
@@ -60,7 +60,7 @@ gulp.task("transpile", function () {
         .pipe(
             babel({
                 compact: false,
-                presets: ["latest"],
+                presets: ["@babel/env"],
             })
         )
         .pipe(gulp.dest("dist/js/"));
