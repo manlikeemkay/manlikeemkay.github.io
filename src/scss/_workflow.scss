@@ -17,9 +17,77 @@
                 width: 152px;
                 height: 152px;
                 border-radius: 50%;
-                background-color: #ffffff;
+                background-color: $slategray-darker;
+                background-position: center;
+                background-size: 50%;
+                background-repeat: no-repeat;
                 box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1),
                 0 3px 10px rgba(0, 0, 0, 0.1);
+
+                &:nth-child(1) {
+                    background-image: url("/dist/images/aws.svg");
+                }
+                &:nth-child(2) {
+                    background-image: url("/dist/images/apple.svg");
+                }
+                &:nth-child(3) {
+                    background-image: url("/dist/images/atlassian.svg");
+                }
+                &:nth-child(4) {
+                    background-image: url("/dist/images/autoprefixer.svg");
+                }
+                &:nth-child(5) {
+                    background-image: url("/dist/images/babel.svg");
+                }
+                &:nth-child(6) {
+                    background-image: url("/dist/images/pa11y.svg");
+                    background-size: auto 50%;
+                }
+                &:nth-child(7) {
+                    background-image: url("/dist/images/cucumber.svg");
+                }
+                &:nth-child(8) {
+                    background-image: url("/dist/images/foundation.svg");
+                }
+                &:nth-child(9) {
+                    background-image: url("/dist/images/git.svg");
+                }
+                &:nth-child(10) {
+                    background-image: url("/dist/images/prettier.svg");
+                }
+                &:nth-child(11) {
+                    background-image: url("/dist/images/markdown.svg");
+                }
+                &:nth-child(12) {
+                    background-image: url("/dist/images/npm.svg");
+                    background-size: 75% auto;
+                }
+                &:nth-child(13) {
+                    background-image: url("/dist/images/gulp.svg");
+                    background-size: auto 75%;
+                }
+                &:nth-child(14) {
+                    background-image: url("/dist/images/postman.svg");
+                }
+                &:nth-child(15) {
+                    background-image: url("/dist/images/chrome.svg");
+                    background-size: 75%;
+                }
+                &:nth-child(16) {
+                    background-image: url("/dist/images/tower.svg");
+                }
+                &:nth-child(17) {
+                    background-image: url("/dist/images/visual-studio-code.svg");
+                }
+                &:nth-child(18) {
+                    background-image: url("/dist/images/adobe-illustrator.svg");
+                }
+                &:nth-child(19) {
+                    background-image: url("/dist/images/adobe-photoshop.svg");
+                }
+                &:nth-child(20) {
+                    background-image: url("/dist/images/sketch.svg");
+                }
             }
         }
     }
