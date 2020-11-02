@@ -19,7 +19,7 @@ var autoprefixer = require("gulp-autoprefixer"),
     zip = require("gulp-zip");
 
 gulp.task("clean", function () {
-    return gulp.src("dist").pipe(clean());
+    return gulp.src("dist", { read: false, allowEmpty: true }).pipe(clean());
 });
 
 gulp.task("update", function () {
