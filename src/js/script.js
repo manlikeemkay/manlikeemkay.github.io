@@ -1,5 +1,10 @@
 "use strict";
 
+AOS.init({
+    duration: 1250,
+    offset: 300,
+});
+
 const SCROLL_SPEED = 0.5;
 const NOISE_SPEED = 0.005;
 const NOISE_AMOUNT = 5;
@@ -9,7 +14,7 @@ const bubbleSpecs = [
     { s: 0.6, x: 1761, y: 372 },
     { s: 0.6, x: 2419, y: 129 },
     { s: 0.6, x: 2545, y: 387 },
-    { s: 0.6, x: 476, y: 256 },
+    { s: 0.6, x: 396, y: 256 },
     { s: 0.6, x: 1595, y: 226 },
     { s: 0.8, x: 1303, y: 193 },
     { s: 0.8, x: 1440, y: 342 },

@@ -24,7 +24,7 @@ gulp.task("clean", function () {
 
 gulp.task("update", function () {
     return gulp
-        .src("node_modules/noisejs/index.js")
+        .src(["node_modules/aos/dist/aos.js"])
         .pipe(gulp.dest("src/js/vendor/"));
 });
 
