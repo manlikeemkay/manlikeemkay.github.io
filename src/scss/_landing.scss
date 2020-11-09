@@ -4,12 +4,20 @@
     background-size: auto 85%;
     background-repeat: no-repeat;
 
-    @include breakpoint(xlarge up) {
-        background-position: center;
-        background-size: auto 100%;
+    @include breakpoint(medium only) {
+        @include breakpoint(landscape) {
+            background-size: 100% auto;
+        }
+    }
+    @include breakpoint(large up) {
+        background-size: cover;
     }
     > .row:first-child {
-        min-height: 100vh;
+        min-height: 75vh;
+
+        @include breakpoint(landscape) {
+            min-height: 100vh;
+        }
         .column {
             text-align: center;
 
@@ -35,6 +43,9 @@
                 }
             }
             &:last-child {
+                @include breakpoint(landscape) {
+                    align-self: center;
+                }
                 @include breakpoint(xlarge up) {
                     text-align: right;
                 }
@@ -47,7 +58,7 @@
                     &:hover {
                         filter: grayscale(0%);
                     }
-                    @media(hover: hover) and (pointer: coarse) {
+                    @media (hover: hover) and (pointer: coarse) {
                         filter: grayscale(0%);
                     }
                 }
