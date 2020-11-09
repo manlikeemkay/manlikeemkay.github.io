@@ -3,6 +3,7 @@
 AOS.init({
     duration: 1250,
     offset: 300,
+    once: true
 });
 
 const SCROLL_SPEED = 0.5;
