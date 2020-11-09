@@ -140,49 +140,70 @@ $block-grid-max: 8;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
-$font-family-monospace: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+$font-family-monospace: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
 $header-color: inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
     small: (
         "h1": (
-            "font-size": 39.60,
+            "font-size": 28,
         ),
         "h2": (
-            "font-size": 34.32,
+            "font-size": 26,
         ),
         "h3": (
-            "font-size": 29.04,
+            "font-size": 24,
         ),
         "h4": (
-            "font-size": 21.12,
-        ),
-        "h5": (
-            "font-size": 13.20,
-        ),
-        "h6": (
-            "font-size": 11.88,
-        ),
-    ),
-    medium: (
-        "h1": (
-            "font-size": 60,
-        ),
-        "h2": (
-            "font-size": 52,
-        ),
-        "h3": (
-            "font-size": 44,
-        ),
-        "h4": (
-            "font-size": 32,
+            "font-size": 22,
         ),
         "h5": (
             "font-size": 20,
         ),
         "h6": (
             "font-size": 18,
+        ),
+    ),
+    medium: (
+        "h1": (
+            "font-size": 42,
+        ),
+        "h2": (
+            "font-size": 34,
+        ),
+        "h3": (
+            "font-size": 28,
+        ),
+        "h4": (
+            "font-size": 24,
+        ),
+        "h5": (
+            "font-size": 20,
+        ),
+        "h6": (
+            "font-size": 18,
+        ),
+    ),
+    large: (
+        "h1": (
+            "font-size": 56,
+        ),
+        "h2": (
+            "font-size": 45,
+        ),
+        "h3": (
+            "font-size": 36,
+        ),
+        "h4": (
+            "font-size": 30,
+        ),
+        "h5": (
+            "font-size": 24,
+        ),
+        "h6": (
+            "font-size": 20,
         ),
     ),
 );
