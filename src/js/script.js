@@ -1,9 +1,10 @@
 "use strict";
 
 AOS.init({
-    duration: 1250,
-    offset: 300,
-    once: true
+    delay: 750,
+    duration: 1500,
+    offset: 0,
+    once: true,
 });
 
 const SCROLL_SPEED = 0.5;
