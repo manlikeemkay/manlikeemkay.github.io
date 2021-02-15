@@ -1,4 +1,18 @@
-![](https://media.giphy.com/media/ZVik7pBtu9dNS/source.gif)
+![](https://media.giphy.com/media/KxiRwO7tqXCTDVKobo/giphy.gif)
+
+# 🥋 My Portfolio
+
+Welcome to a one page website about me!
+
+Feel free to use any part of the site to your inspiration and grab what you need - all I ask for is accreditation...
+
+Otherwise, enjoy 😉
+
+## 🤙🏻 Contact Me
+
+My inbox is always open!
+
+Whether you have a question, need some advice or just want to say hi, I'll try my best to get back to you!
 
 ## 📚 Acknowledgements
 
