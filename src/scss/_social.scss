@@ -2,15 +2,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 50vh;
     .row {
-        min-height: 33vh;
+        a {
+            display: block;
+        }
         img {
-            width: auto;
-            height: 64px;
+            height: 125px;
             &[src$="gmail.svg"] {
-                width: 75px;
-                height: auto;
                 vertical-align: text-top;
             }
         }
