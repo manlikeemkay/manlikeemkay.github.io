@@ -91,6 +91,5 @@ class Bubble {
         this.el.style.transform = `translate(${this.xWithNoise}px, ${this.yWithNoise}px) scale(${this.scale})`;
     }
 }
-
 noise.seed(Math.floor(Math.random() * 64000));
 const bubbles = new Bubbles(bubbleSpecs);
