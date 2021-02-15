@@ -1,21 +1,21 @@
-.technologies {
+.about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 66vh;
+    padding-top: 0;
+    padding-bottom: 0;
     > .row {
-        &:first-child {
-            p {
-                margin-bottom: 0;
-            }
+        p:last-child {
+            margin-bottom: 0;
         }
         a {
             display: inline-block;
-            padding-top: 50px;
+            padding-top: 33px;
         }
         img {
             width: auto;
-            height: 64px;
+            height: 40px;
             &[src$="aws.svg"] {
                 width: 95px;
                 height: auto;
