@@ -3,8 +3,9 @@
     flex-direction: column;
     justify-content: center;
     min-height: 66vh;
-    padding-top: 0;
-    padding-bottom: 0;
+    @include breakpoint(small only) {
+        padding-bottom: 75px;
+    }
     > .row {
         p:last-child {
             margin-bottom: 0;
