@@ -498,7 +498,7 @@ html, body { cursor: default; }
 code { cursor: text; }
 a, button, input[type="button"], input[type="checkbox"], input[type="radio"], input[type="submit"], label { cursor: pointer; }
 button[disabled], input[disabled] { cursor: default; }
-.landing { background-image: url("/dist/images/background.svg"); background-position: 33% 0; background-size: auto 85%; background-repeat: no-repeat; }
+.landing { background-image: url("/images/background.svg"); background-position: 33% 0; background-size: auto 85%; background-repeat: no-repeat; }
 @media screen and (min-width: 40em) and (max-width: 63.99875em) and (orientation: landscape) { .landing { background-size: 100% auto; } }
 @media print, screen and (min-width: 64em) { .landing { background-size: cover; } }
 .landing > .row:first-child { min-height: 75vh; }
