@@ -33,9 +33,9 @@ gulp.task("copy", function () {
     gulp.src(["src/images/**/**", "!src/images/favicons"]).pipe(
         gulp.dest("dist/images/")
     );
-    gulp.src(["src/images/favicons/**/**"]).pipe(gulp.dest("./"));
+    gulp.src(["src/images/favicons/**/**"]).pipe(gulp.dest("dist/"));
     gulp.src("src/js/**/**").pipe(gulp.dest("dist/js/"));
-    return gulp.src("src/**/**.html").pipe(gulp.dest("./"));
+    return gulp.src("src/**/**.html").pipe(gulp.dest("dist/"));
 });
 
 gulp.task("sass", function () {
@@ -131,7 +131,7 @@ gulp.task("serve", function (done) {
     browserSync.init({
         browser: "google chrome",
         server: {
-            baseDir: "./",
+            baseDir: "./dist/",
         },
     });
     done();
