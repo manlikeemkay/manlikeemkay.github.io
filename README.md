@@ -18,6 +18,8 @@ Whether you have a question, need some advice or just want to say hi, I'll try m
 
 The MIT License: https://opensource.org/licenses/MIT.
 
+Deployment branch: https://gist.github.com/cobyism/4730490.
+
 ## ⚖️ License (MIT)
 
 Copyright © Mohamed Kherroubi.
