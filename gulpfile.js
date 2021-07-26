@@ -12,7 +12,7 @@ var autoprefixer = require("gulp-autoprefixer"),
     npmPackage = require("./package.json"),
     removeEmptyLines = require("gulp-remove-empty-lines"),
     runSequence = require("gulp4-run-sequence"),
-    sass = require("gulp-sass"),
+    sass = require("gulp-sass")(require("node-sass")),
     stripCSSComments = require("gulp-strip-css-comments"),
     uglify = require("gulp-uglify"),
     uncss = require("gulp-uncss"),
@@ -28,14 +28,15 @@ gulp.task("update", function () {
         .pipe(gulp.dest("src/js/vendor/"));
 });
 
-gulp.task("copy", function () {
+gulp.task("copy", function (done) {
     gulp.src("src/fonts/**/**").pipe(gulp.dest("dist/fonts/"));
     gulp.src(["src/images/**/**", "!src/images/favicons"]).pipe(
         gulp.dest("dist/images/")
     );
     gulp.src(["src/images/favicons/**/**"]).pipe(gulp.dest("dist/"));
     gulp.src("src/js/**/**").pipe(gulp.dest("dist/js/"));
-    return gulp.src("src/**/**.html").pipe(gulp.dest("dist/"));
+    gulp.src("src/**/**.html").pipe(gulp.dest("dist/"));
+    done();
 });
 
 gulp.task("sass", function () {
@@ -146,7 +147,7 @@ gulp.task("build", function (done) {
     runSequence("clean", "sass", "copy", done);
 });
 
-gulp.task("release", function () {
+gulp.task("release", function (done) {
     runSequence(
         "clean",
         "sass",
@@ -155,7 +156,8 @@ gulp.task("release", function () {
         "cssmin",
         "uncss",
         "jsmin",
-        "archive"
+        "archive",
+        done
     );
 });
 
