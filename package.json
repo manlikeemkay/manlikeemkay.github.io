@@ -3,18 +3,12 @@
   "version": "1.0.0",
   "description": "A simple, modern and responsive portfolio website for a front-end web developer",
   "author": "Mohamed Kherroubi (@manlikeemkay)",
-  "contributors": [
-    {
-      "name": "",
-      "email": ""
-    }
-  ],
   "keywords": [
     "HTML",
     "CSS",
     "JavaScript",
     "Foundation",
-    "jQuery"
+    "SASS"
   ],
   "repository": {
     "type": "git",
