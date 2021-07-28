@@ -156,7 +156,6 @@ gulp.task("release", function (done) {
         "cssmin",
         "uncss",
         "jsmin",
-        "archive",
         done
     );
 });
