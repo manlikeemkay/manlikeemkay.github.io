@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     cursor: default;
 }
 
@@ -6,10 +7,17 @@ code {
     cursor: text;
 }
 
-a, button, input[type="button"], input[type="checkbox"], input[type="radio"], input[type="submit"], label {
+a,
+button,
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+label {
     cursor: pointer;
 }
 
-button[disabled], input[disabled] {
+button[disabled],
+input[disabled] {
     cursor: default;
 }

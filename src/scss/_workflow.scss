@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
+    overflow: hidden;
     .row {
         text-align: center;
         &:nth-child(2) {
@@ -22,7 +23,7 @@
                 background-size: 50%;
                 background-repeat: no-repeat;
                 box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1),
-                0 3px 10px rgba(0, 0, 0, 0.1);
+                    0 3px 10px rgba(0, 0, 0, 0.1);
 
                 &:nth-child(1) {
                     background-image: url("/images/aws.svg");
